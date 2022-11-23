@@ -61,7 +61,7 @@ export const students = [
   },
 ];
 
-const availableMaleNames = [
+export const availableMaleNames = [
   "pepe",
   "juan",
   "victor",
@@ -69,7 +69,7 @@ const availableMaleNames = [
   "francisco",
   "alex",
 ];
-const availableFemaleNames = [
+export const availableFemaleNames = [
   "cecilia",
   "ana",
   "luisa",
@@ -77,4 +77,4 @@ const availableFemaleNames = [
   "isabel",
   "virginia",
 ];
-const availableGenders = ["male", "female"];
+export const availableGenders = ["male", "female"];

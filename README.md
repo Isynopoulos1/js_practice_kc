@@ -10,7 +10,8 @@ Once the execution is finished, we will show the list of requirements again so t
 If the user presses 0 or a number that is not contemplated, the application will finish.
 
 
-#REQUIREMENTS
+
+REQUIREMENTS
 
 1 - Show all students in table format.
 2 - Show the number of students in class on the console.
@@ -37,7 +38,7 @@ If the user presses 0 or a number that is not contemplated, the application will
 14- Add a new note to the students. For each student in class, we will have to calculate a note at random (number between 0 and 10) and add it to their list of notes.
 15- Order the array of students alphabetically according to their names.
 
-#OPTIONAL REQUIREMENTS
+OPTIONAL REQUIREMENTS
 
 16- Show the student of the class with the best grades on the console.
 (The student with the best grades is the one whose sum of all their grades is the highest value of all).
