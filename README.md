@@ -30,7 +30,7 @@ REQUIREMENTS
   - Empty list of qualifications.
   * Important: name and gender have to match.
 
-11- Display the name of the youngest STUDENT on the console.
+11- Display the name of the youngest student on the console.
   * Important: If several people in class share the lowest age, any of them is a valid answer.
 
 12- Show the console the average age of all the students in class.
