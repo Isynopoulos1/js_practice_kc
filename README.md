@@ -1,4 +1,4 @@
-#JAVASCRIPT PRACTICE | CLASSROOM MANAGEMENT
+###JAVASCRIPT PRACTICE | CLASSROOM MANAGEMENT
 
 ```
 To develop an application implemented with Javascript to manage a students class.
@@ -10,16 +10,16 @@ Once the execution is finished, we will show the list of requirements again so t
 If the user presses 0 or a number that is not contemplated, the application will finish.
 
 
-REQUIREMENTS
+#REQUIREMENTS
 
 1 - Show all students in table format.
 2 - Show the number of students in class on the console.
 3 - Show the console all the names of the students.
 4 - Eliminate the last student in class.
 5 - Eliminate a student randomly from the class.
-6 - Show the console all the data of the students who are girls.
-7 - Show the number of boys and girls in class on the console.
-8 - Show true or false by console if all the students in class are girls.
+6 - Show the console all the data of the students who are women.
+7 - Show the number of men and women in class on the console.
+8 - Show true or false by console if all the students in class are women.
 9 - Show the names of the students who will be between 20 and 25 years old on the console.
 10 - Add a new student with the following information:
 
@@ -37,7 +37,7 @@ REQUIREMENTS
 14- Add a new note to the students. For each student in class, we will have to calculate a note at random (number between 0 and 10) and add it to their list of notes.
 15- Order the array of students alphabetically according to their names.
 
-OPTIONAL REQUIREMENTS
+#OPTIONAL REQUIREMENTS
 
 16- Show the student of the class with the best grades on the console.
 (The student with the best grades is the one whose sum of all their grades is the highest value of all).
