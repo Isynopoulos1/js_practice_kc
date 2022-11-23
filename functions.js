@@ -93,42 +93,77 @@ import {
 
 // /////10 - Add a new student with the following information: Random name, random age between 20 and 50 years, random genre, empty list of qualifications.
 
-export function randomGender() {
-  return availableGenders[Math.floor(Math.random() * availableGenders.length)];
-}
+// export function randomGender() {
+//   return availableGenders[Math.floor(Math.random() * availableGenders.length)];
+// }
 
-export function randomFemaleName() {
-  return availableFemaleNames[
-    Math.floor(Math.random() * availableFemaleNames.length)
-  ];
-}
+// export function randomFemaleName() {
+//   return availableFemaleNames[
+//     Math.floor(Math.random() * availableFemaleNames.length)
+//   ];
+// }
 
-export function randomMaleName() {
-  return availableMaleNames[
-    Math.floor(Math.random() * availableMaleNames.length)
-  ];
-}
+// export function randomMaleName() {
+//   return availableMaleNames[
+//     Math.floor(Math.random() * availableMaleNames.length)
+//   ];
+// }
 
-export function randomAge(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+// export function randomAge(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// }
 
-export const addStudent = (studentsArray) => {
-  const age = randomAge(20, 50);
-  const gender = randomGender();
-  const name = gender === "female" ? randomFemaleName() : randomMaleName();
-  const newStudent = {
-    age: age,
-    examScores: [],
-    gender: gender,
-    name: name,
-  };
+// export const addStudent = (studentsArray) => {
+//   const age = randomAge(20, 50);
+//   const gender = randomGender();
+//   const name = gender === "female" ? randomFemaleName() : randomMaleName();
+//   const newStudent = {
+//     age: age,
+//     examScores: [],
+//     gender: gender,
+//     name: name,
+//   };
 
-  return studentsArray.push(newStudent);
+//   return studentsArray.push(newStudent);
+// };
+
+// console.log("list before", students);
+
+// addStudent(students);
+
+// console.log("list after", students);
+
+// /////11 - Display the name of the youngest student on the console.
+
+// export function youngestStudent() {
+//   const youngestStudent = students.reduce((accum, value) =>
+//     accum.age < value.age ? accum : value
+//   );
+//   console.log("The youngest student is:", youngestStudent.name);
+//   return youngestStudent;
+// }
+
+// youngestStudent();
+
+// /////12 - Show the console the average age of all the students in class.
+
+// export const calcAverage = () => {
+//   const calcAverage = students.reduce((a, b) => a + b.age, 0) / students.length;
+//   console.log("The age average is: ", calcAverage);
+//   return calcAverage;
+// };
+// calcAverage();
+
+// /////13 - Display the average age of the girls on the console.
+
+export const totalWomen = () => {
+  const totalWomen = students.filter((student) => student.gender === "female");
+  const avgWomen =
+    totalWomen.reduce((a, b) => a + b.age, 0) / totalWomen.length;
+  console.log(Math.round(avgWomen));
+  return avgWomen;
 };
 
-console.log("list before", students);
+totalWomen();
 
-addStudent(students);
-
-console.log("list after", students);
+// /////14 - Add a new note to the students. For each student in class, we will have to calculate a note at random (number between 0 and 10) and add it to their list of notes.
