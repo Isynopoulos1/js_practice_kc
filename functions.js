@@ -1,18 +1,18 @@
 import { students } from "./data.js";
 
-// // // 1 - Mostrar en formato de tabla todos los alumnos.
+// ///// 1 - Show all students in table format.
 // export function printTable() {
 //   console.table(students);
 // }
 // printTable();
 
-// // // // 2- Mostrar por consola la cantidad de alumnos que hay en clase.
+// /////2 - Show the number of students in class on the console.
 // export function totalStudents() {
 //   console.log(students.length);
 // }
 // totalStudents();
 
-// // // // 3- Mostrar por consola todos los nombres de los alumnos.
+// /////3 - Show the console all the names of the students.
 
 // export function studentsNames() {
 //   students.forEach((student) => {
@@ -21,14 +21,14 @@ import { students } from "./data.js";
 // }
 // studentsNames();
 
-// // // 4- Eliminar el último alumno de la clase.
+// /////4 - Eliminate the last student in class.
 // export function isPopped() {
 //   const popped = students.pop();
 //   console.log(popped);
 // }
 // isPopped();
 
-// // 5- Eliminar un alumno aleatoriamente de la clase
+// /////5 - Eliminate a student randomly from the class.
 // export function randomEliminated() {
 //   const randomStudent = Math.floor(Math.random() * students.length);
 //   const result = students.splice(randomStudent, 1)[0];
@@ -36,7 +36,7 @@ import { students } from "./data.js";
 // }
 // randomEliminated();
 
-// // 6-Mostrar por consola todos los datos de los alumnos que son chicas.
+// /////6 - Show the console all the data of the students who are women.
 
 // export function FemaleStudents() {
 //   let females = students.filter((student) => student.gender == "female");
@@ -45,7 +45,7 @@ import { students } from "./data.js";
 // }
 // FemaleStudents();
 
-// // // 7- Mostrar por consola el número de chicos y chicas que hay en la clase.
+// /////7 - Show the number of men and women in class on the console.
 // export function MaleStudents() {
 //   let males = students.filter((student) => student.gender == "male");
 
@@ -59,10 +59,10 @@ import { students } from "./data.js";
 // }
 // FemaleStudents_();
 
-// // 8 - Mostrar true o false por consola si todos los alumnos de la clase son chicas.
+// /////8 - Show true or false by console if all the students in class are women.
 // export function isFemale() {
 //   console.log(students.map((student) => student.gender).includes("female"));
 // }
 // isFemale();
 
-// 9- Mostrar por consola los nombres de los alumnos que tengan entre 20 y 25 años.
+// /////9 - Show the names of the students who will be between 20 and 25 years old on the console.
