@@ -19,12 +19,12 @@ import {
 
 // /////3 - Show the console all the names of the students.
 
-// export function studentsNames() {
-//   students.forEach((student) => {
-//     console.log(student.name);
-//   });
-// }
-// studentsNames();
+export function studentsNames() {
+  return students.forEach((student) => {
+    return student.name;
+  });
+}
+studentsNames();
 
 // /////4 - Eliminate the last student in class.
 // export function isPopped() {
@@ -83,10 +83,24 @@ import {
 
 // /////10 - Add a new student with the following information: Random name, random age between 20 and 50 years, random genre, empty list of qualifications.
 
-export function addNewStudent() {
-  const addGender =
-    availableGenders[Math.floor(Math.random() * availableGenders.length)];
-  console.log(addGender);
+export function generateGender() {
+  return availableGenders[Math.floor(Math.random() * availableGenders.length)];
 }
 
-addNewStudent();
+export function addFemaleName() {
+  return availableFemaleNames[
+    Math.floor(Math.random() * availableFemaleNames.length)
+  ];
+}
+
+export function addMaleName() {
+  return availableMaleNames[
+    Math.floor(Math.random() * availableMaleNames.length)
+  ];
+}
+
+const womemName = addFemaleName();
+const maleName = addMaleName();
+
+console.log(womemName);
+console.log(maleName);
