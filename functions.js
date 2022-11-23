@@ -66,3 +66,14 @@ import { students } from "./data.js";
 // isFemale();
 
 // /////9 - Show the names of the students who will be between 20 and 25 years old on the console.
+
+export function youngStudents() {
+  let youngStudents = students.filter(
+    (student) => student.age >= 20 && student.age <= 25
+  );
+
+  console.log(youngStudents);
+}
+youngStudents();
+
+// /////10 - Add a new student with the following information: Random name, random age between 20 and 50 years, random genre, empty list of qualifications.
