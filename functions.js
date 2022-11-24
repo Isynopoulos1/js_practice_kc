@@ -154,16 +154,43 @@ import {
 // };
 // calcAverage();
 
-// /////13 - Display the average age of the girls on the console.
+// /////13 - Display the average age of the women on the console.
 
-export const totalWomen = () => {
-  const totalWomen = students.filter((student) => student.gender === "female");
-  const avgWomen =
-    totalWomen.reduce((a, b) => a + b.age, 0) / totalWomen.length;
-  console.log(Math.round(avgWomen));
-  return avgWomen;
-};
+// export const totalWomen = () => {
+//   const totalWomen = students.filter((student) => student.gender === "female");
+//   const avgWomen =
+//     totalWomen.reduce((a, b) => a + b.age, 0) / totalWomen.length;
+//   console.log(Math.round(avgWomen));
+//   return avgWomen;
+// };
 
-totalWomen();
+// totalWomen();
 
 // /////14 - Add a new note to the students. For each student in class, we will have to calculate a note at random (number between 0 and 10) and add it to their list of notes.
+
+// export function newNote() {
+//   const min = 0;
+//   const max = 10;
+//   students.forEach(function (student) {
+//     let score = Math.floor(Math.random() * (max - min) + min);
+//     student.testScore.push([score]);
+//     console.log(student);
+//   });
+// }
+// newNote();
+
+// /////15 - Order the array of students alphabetically according to their names.
+
+// export const sortedNames = () => {
+//   students.sort(function (a, b) {
+//     if (a.name < b.name) {
+//       return -1;
+//     }
+//     if (a.name > b.name) {
+//       return 1;
+//     }
+//     return 0;
+//   });
+//   console.log("The students order alphabetically: ", students);
+// };
+// sortedNames();
