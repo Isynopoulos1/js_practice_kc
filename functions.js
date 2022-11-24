@@ -56,7 +56,7 @@ export function FemaleStudents_() {
 
 // /////8 - Show true or false by console if all the students in class are women.
 export function isFemale() {
-  return students.map((student) => student.gender).includes("female");
+  return !students.map((student) => student.gender).includes("male");
 }
 
 // /////9 - Show the names of the students who will be between 20 and 25 years old on the console.
