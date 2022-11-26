@@ -7,6 +7,7 @@ import {
   isPopped,
   randomEliminated,
   FemaleStudents,
+  FemaleStudents_,
   MaleStudents,
   isFemale,
   youngStudents,
@@ -38,6 +39,7 @@ const rl = readline.createInterface({
 
 rl.question("Type in the number of your option (1-17):", (input) => {
   let result;
+  let result2;
   switch (input) {
     case "1":
       console.log("the list of student formatted as table:");
@@ -67,10 +69,13 @@ rl.question("Type in the number of your option (1-17):", (input) => {
       );
       break;
     case "7":
-      result = MaleStudents();
+      result = FemaleStudents_();
+      result2 = MaleStudents();
       console.log(
-        "Show the number of men and women in class on the console.",
-        result
+        "Show the console all the data of the students who are women.",
+        result,
+        "and the men are",
+        result2
       );
       break;
     case "8":
@@ -88,7 +93,7 @@ rl.question("Type in the number of your option (1-17):", (input) => {
       );
       break;
     case "10":
-      result = addStudent();
+      result = addStudent(students);
       console.log(
         "10 - Add a new student with the following information: Random name, random age between 20 and 50 years, random genre, empty list of qualifications. ",
         result

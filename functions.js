@@ -101,8 +101,8 @@ export const addStudent = (studentsArray) => {
     gender: gender,
     name: name,
   };
-
-  return studentsArray.push(newStudent);
+  studentsArray.push(newStudent);
+  return studentsArray;
 };
 
 // /////11 - Display the name of the youngest student on the console.
@@ -135,10 +135,16 @@ export const totalWomen = () => {
 export function newNote() {
   const min = 0;
   const max = 10;
-  students.forEach(function (student) {
+
+  const newStudents = students.map(function (student) {
     let score = Math.floor(Math.random() * (max - min) + min);
-    return student.testScore.push(score);
+    return {
+      ...student,
+      testScore: [...student.testScore, score],
+    };
   });
+
+  return newStudents;
 }
 
 // /////15 - Order the array of students alphabetically according to their names.
@@ -176,8 +182,6 @@ export const averageNote = () => {
       student.testScore.reduce((a, b) => a + b, 0) / students.length;
     scores.push(totalScore);
     const theBestStudent = scores.indexOf(Math.max(...scores));
-    console.log(
-      `the best average score is for: ${students[theBestStudent].name} with the average score ${scores[theBestStudent]}`
-    );
+    return students[theBestStudent].name;
   });
 };
