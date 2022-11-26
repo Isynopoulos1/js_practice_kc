@@ -9,9 +9,13 @@ The user must press the number corresponding to each requirement for it to be ex
 Once the execution is finished, we will show the list of requirements again so that the user can select another one.
 If the user presses 0 or a number that is not contemplated, the application will finish.
 
-LAUNCH
 
+
+LAUNCH
+*IMPORTANT
 Launch with `node practica_js/menu.js`
+
+
 
 REQUIREMENTS
 
