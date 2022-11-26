@@ -42,7 +42,7 @@ rl.question("Type in the number of your option (1-17):", (input) => {
   let result2;
   switch (input) {
     case "1":
-      console.log("the list of student formatted as table:");
+      console.log("The list of student formatted as table:");
       printTable();
       break;
     case "2":

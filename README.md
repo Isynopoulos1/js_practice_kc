@@ -49,6 +49,6 @@ OPTIONAL REQUIREMENTS
 16- Show the student of the class with the best grades on the console.
 (The student with the best grades is the one whose sum of all their grades is the highest value of all).
 17- Display on the console the highest average grade of the class and the name of the student to whom it belongs.
-18- Add an extra point to each existing grade of all students. Remember that the maximum possible grade is 10. If the students have not yet registered any grade, we will give them a 10.
+
 
 ```
