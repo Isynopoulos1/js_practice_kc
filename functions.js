@@ -176,12 +176,15 @@ export const bestScore = () => {
 // /////17- Display on the console the highest average grade of the class and the name of the student to whom it belongs.
 
 export const averageNote = () => {
-  const scores = [];
-  students.forEach((student) => {
-    let totalScore =
-      student.testScore.reduce((a, b) => a + b, 0) / students.length;
-    scores.push(totalScore);
-    const theBestStudent = scores.indexOf(Math.max(...scores));
-    return students[theBestStudent].name;
+  const studentsList = students.map((student) => {
+    return {
+      ...student,
+      score: student.testScore.reduce((a, b) => a + b, 0) / students.length,
+    };
   });
+  const maxScore = Math.max(...studentsList.map((student) => student.score));
+  const bestStudent = studentsList.find((student) => {
+    return student.score === maxScore;
+  });
+  return bestStudent;
 };

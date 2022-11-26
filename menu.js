@@ -144,8 +144,10 @@ rl.question("Type in the number of your option (1-17):", (input) => {
     case "17":
       result = averageNote();
       console.log(
-        "17- Display on the console the highest average grade of the class and the name of the student to whom it belongs. ",
-        result
+        `17- Display on the console the highest average grade of the class and the name of the student to whom it belongs:`,
+        result.name,
+        "with a score of",
+        result.score
       );
       break;
 
